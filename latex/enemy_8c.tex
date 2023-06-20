@@ -1,0 +1,269 @@
+\hypertarget{enemy_8c}{}\section{enemy.\+c File Reference}
+\label{enemy_8c}\index{enemy.\+c@{enemy.\+c}}
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$S\+D\+L/\+S\+D\+L.\+h$>$}\newline
+{\ttfamily \#include $<$S\+D\+L/\+S\+D\+L\+\_\+image.\+h$>$}\newline
+{\ttfamily \#include $<$S\+D\+L/\+S\+D\+L\+\_\+ttf.\+h$>$}\newline
+{\ttfamily \#include $<$S\+D\+L/\+S\+D\+L\+\_\+mixer.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}enemy.\+h\char`\"{}}\newline
+Include dependency graph for enemy.\+c\+:
+% FIG 0
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{enemy_8c_a02490106dadf033a23acbc5cca0348e4}{init\+\_\+enemy} (\hyperlink{structenemy}{enemy} $\ast$e, int pos\+\_\+x, int num)
+\begin{DoxyCompactList}\small\item\em loading the enemy \end{DoxyCompactList}\item 
+void \hyperlink{enemy_8c_a40ad6eb4ad081e4d051ab4867d56fceb}{init\+\_\+enemies} (\hyperlink{structenemy}{enemy} e\mbox{[}$\,$\mbox{]}, int lvl, int posenemies\mbox{[}$\,$\mbox{]})
+\begin{DoxyCompactList}\small\item\em loading all the enemies \end{DoxyCompactList}\item 
+void \hyperlink{enemy_8c_a323ff9f9b7b345ac6cac713eb27a5e20}{init\+\_\+input\+\_\+enemy} (\hyperlink{structinputenemy}{inputenemy} $\ast$I)
+\begin{DoxyCompactList}\small\item\em initialize the input to zero \end{DoxyCompactList}\item 
+void \hyperlink{enemy_8c_aaba048a59481341f5771dc2706812c86}{get\+\_\+input\+\_\+enemy} (\hyperlink{structinputenemy}{inputenemy} $\ast$I, \hyperlink{structBackground}{Background} b, \hyperlink{structenemy}{enemy} e\mbox{[}$\,$\mbox{]})
+\begin{DoxyCompactList}\small\item\em get the input of the enemy \end{DoxyCompactList}\item 
+void \hyperlink{enemy_8c_a795e02710a56123bdf1211ea4ca6fec9}{deplacer\+\_\+enemy} (\hyperlink{structenemy}{enemy} $\ast$e)
+\begin{DoxyCompactList}\small\item\em move the enemy \end{DoxyCompactList}\item 
+void \hyperlink{enemy_8c_a59a07dfdca65dfe57a19354dcc3ad3ec}{deplacer\+\_\+enemies} (\hyperlink{structenemy}{enemy} e\mbox{[}$\,$\mbox{]}, int lvl, \hyperlink{structinputenemy}{inputenemy} I)
+\begin{DoxyCompactList}\small\item\em move all the enemies \end{DoxyCompactList}\item 
+void \hyperlink{enemy_8c_aeb9e082588aceccc908c0adf2e4b74a8}{afficher\+\_\+enemy} (\hyperlink{structimagee}{imagee} p, S\+D\+L\+\_\+\+Surface $\ast$ecran)
+\begin{DoxyCompactList}\small\item\em display an image \end{DoxyCompactList}\item 
+void \hyperlink{enemy_8c_affd3bb0e5d40e4210b0c5937d31eb7c9}{annimer\+\_\+enemy} (\hyperlink{structenemy}{enemy} e, int $\ast$j, S\+D\+L\+\_\+\+Surface $\ast$ecran, int num, int etat\+\_\+attack)
+\begin{DoxyCompactList}\small\item\em display the enemy \end{DoxyCompactList}\item 
+void \hyperlink{enemy_8c_accc7196d3cd62cb15f9a1dcb4f5de77d}{annimer\+\_\+enemies} (\hyperlink{structenemy}{enemy} e\mbox{[}$\,$\mbox{]}, int lvl, int $\ast$j, S\+D\+L\+\_\+\+Surface $\ast$ecran, \hyperlink{structinputenemy}{inputenemy} I)
+\begin{DoxyCompactList}\small\item\em display all the enemies \end{DoxyCompactList}\item 
+int \hyperlink{enemy_8c_acd9bcfc97cdd1844ae538e71c5af6c4b}{collision\+\_\+enemy\+\_\+perso} (\hyperlink{structplayer}{player} perso, \hyperlink{structenemy}{enemy} e)
+\begin{DoxyCompactList}\small\item\em get the result if there is a collison between the enemy and the player or not \end{DoxyCompactList}\item 
+int \hyperlink{enemy_8c_a0c04b301d252c703886f13e556bb608c}{collision\+\_\+enemies} (\hyperlink{structplayer}{player} perso, \hyperlink{structenemy}{enemy} e\mbox{[}$\,$\mbox{]})
+\begin{DoxyCompactList}\small\item\em get the result if there is a collison between all the enemies and the player or not \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{enemy_8c_aeb9e082588aceccc908c0adf2e4b74a8}\label{enemy_8c_aeb9e082588aceccc908c0adf2e4b74a8}} 
+\index{enemy.\+c@{enemy.\+c}!afficher\+\_\+enemy@{afficher\+\_\+enemy}}
+\index{afficher\+\_\+enemy@{afficher\+\_\+enemy}!enemy.\+c@{enemy.\+c}}
+\subsubsection{\texorpdfstring{afficher\+\_\+enemy()}{afficher\_enemy()}}
+{\footnotesize\ttfamily void afficher\+\_\+enemy (\begin{DoxyParamCaption}\item[{\hyperlink{structimagee}{imagee}}]{p,  }\item[{S\+D\+L\+\_\+\+Surface $\ast$}]{ecran }\end{DoxyParamCaption})}
+
+
+
+display an image 
+
+
+\begin{DoxyParams}{Parameters}
+{\em imagee} & p is the image of enemy that we want to display \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+nothing 
+\end{DoxyReturn}
+\mbox{\Hypertarget{enemy_8c_accc7196d3cd62cb15f9a1dcb4f5de77d}\label{enemy_8c_accc7196d3cd62cb15f9a1dcb4f5de77d}} 
+\index{enemy.\+c@{enemy.\+c}!annimer\+\_\+enemies@{annimer\+\_\+enemies}}
+\index{annimer\+\_\+enemies@{annimer\+\_\+enemies}!enemy.\+c@{enemy.\+c}}
+\subsubsection{\texorpdfstring{annimer\+\_\+enemies()}{annimer\_enemies()}}
+{\footnotesize\ttfamily void annimer\+\_\+enemies (\begin{DoxyParamCaption}\item[{\hyperlink{structenemy}{enemy}}]{e\mbox{[}$\,$\mbox{]},  }\item[{int}]{lvl,  }\item[{int $\ast$}]{j,  }\item[{S\+D\+L\+\_\+\+Surface $\ast$}]{ecran,  }\item[{\hyperlink{structinputenemy}{inputenemy}}]{I }\end{DoxyParamCaption})}
+
+
+
+display all the enemies 
+
+
+\begin{DoxyParams}{Parameters}
+{\em enemy} & e\mbox{[}\mbox{]} is the list of all the enemies that we want to display \\
+\hline
+{\em inputenemy} & I is the state of the \hyperlink{structenemy}{enemy(input)} \\
+\hline
+{\em int} & lvl is the level \\
+\hline
+{\em S\+D\+L\+\_\+\+Surface} & $\ast$ecran the surface where we\textquotesingle{}re going to blit the image on it \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+nothing 
+\end{DoxyReturn}
+\mbox{\Hypertarget{enemy_8c_affd3bb0e5d40e4210b0c5937d31eb7c9}\label{enemy_8c_affd3bb0e5d40e4210b0c5937d31eb7c9}} 
+\index{enemy.\+c@{enemy.\+c}!annimer\+\_\+enemy@{annimer\+\_\+enemy}}
+\index{annimer\+\_\+enemy@{annimer\+\_\+enemy}!enemy.\+c@{enemy.\+c}}
+\subsubsection{\texorpdfstring{annimer\+\_\+enemy()}{annimer\_enemy()}}
+{\footnotesize\ttfamily void annimer\+\_\+enemy (\begin{DoxyParamCaption}\item[{\hyperlink{structenemy}{enemy}}]{e,  }\item[{int $\ast$}]{j,  }\item[{S\+D\+L\+\_\+\+Surface $\ast$}]{ecran,  }\item[{int}]{num,  }\item[{int}]{etat\+\_\+attack }\end{DoxyParamCaption})}
+
+
+
+display the enemy 
+
+
+\begin{DoxyParams}{Parameters}
+{\em etat\+\_\+attack} & is the input or the state of that enemy \\
+\hline
+{\em int} & num used to know the type of the enemy we\textquotesingle{}re loading (the male monster or the female monster) \\
+\hline
+{\em enemy} & e is the enemy that we want to display \\
+\hline
+{\em S\+D\+L\+\_\+\+Surface} & $\ast$ecran the surface where we\textquotesingle{}re going to blit the image on it \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+nothing 
+\end{DoxyReturn}
+\mbox{\Hypertarget{enemy_8c_a0c04b301d252c703886f13e556bb608c}\label{enemy_8c_a0c04b301d252c703886f13e556bb608c}} 
+\index{enemy.\+c@{enemy.\+c}!collision\+\_\+enemies@{collision\+\_\+enemies}}
+\index{collision\+\_\+enemies@{collision\+\_\+enemies}!enemy.\+c@{enemy.\+c}}
+\subsubsection{\texorpdfstring{collision\+\_\+enemies()}{collision\_enemies()}}
+{\footnotesize\ttfamily int collision\+\_\+enemies (\begin{DoxyParamCaption}\item[{\hyperlink{structplayer}{player}}]{perso,  }\item[{\hyperlink{structenemy}{enemy}}]{e\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+get the result if there is a collison between all the enemies and the player or not 
+
+
+\begin{DoxyParams}{Parameters}
+{\em enemy} & e\mbox{[}\mbox{]} is the list of all the enemies \\
+\hline
+{\em player} & perso is the player \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+collision 
+\end{DoxyReturn}
+\mbox{\Hypertarget{enemy_8c_acd9bcfc97cdd1844ae538e71c5af6c4b}\label{enemy_8c_acd9bcfc97cdd1844ae538e71c5af6c4b}} 
+\index{enemy.\+c@{enemy.\+c}!collision\+\_\+enemy\+\_\+perso@{collision\+\_\+enemy\+\_\+perso}}
+\index{collision\+\_\+enemy\+\_\+perso@{collision\+\_\+enemy\+\_\+perso}!enemy.\+c@{enemy.\+c}}
+\subsubsection{\texorpdfstring{collision\+\_\+enemy\+\_\+perso()}{collision\_enemy\_perso()}}
+{\footnotesize\ttfamily int collision\+\_\+enemy\+\_\+perso (\begin{DoxyParamCaption}\item[{\hyperlink{structplayer}{player}}]{perso,  }\item[{\hyperlink{structenemy}{enemy}}]{e }\end{DoxyParamCaption})}
+
+
+
+get the result if there is a collison between the enemy and the player or not 
+
+
+\begin{DoxyParams}{Parameters}
+{\em enemy} & e is the enemy \\
+\hline
+{\em player} & perso is the player \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+collision 
+\end{DoxyReturn}
+\mbox{\Hypertarget{enemy_8c_a59a07dfdca65dfe57a19354dcc3ad3ec}\label{enemy_8c_a59a07dfdca65dfe57a19354dcc3ad3ec}} 
+\index{enemy.\+c@{enemy.\+c}!deplacer\+\_\+enemies@{deplacer\+\_\+enemies}}
+\index{deplacer\+\_\+enemies@{deplacer\+\_\+enemies}!enemy.\+c@{enemy.\+c}}
+\subsubsection{\texorpdfstring{deplacer\+\_\+enemies()}{deplacer\_enemies()}}
+{\footnotesize\ttfamily void deplacer\+\_\+enemies (\begin{DoxyParamCaption}\item[{\hyperlink{structenemy}{enemy}}]{e\mbox{[}$\,$\mbox{]},  }\item[{int}]{lvl,  }\item[{\hyperlink{structinputenemy}{inputenemy}}]{I }\end{DoxyParamCaption})}
+
+
+
+move all the enemies 
+
+
+\begin{DoxyParams}{Parameters}
+{\em int} & lvl is the level \\
+\hline
+{\em inputenemy} & I is the state of the \hyperlink{structenemy}{enemy(input)} \\
+\hline
+{\em enemy} & e\mbox{[}\mbox{]} is the list of all the enemies that we want to move \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+nothing 
+\end{DoxyReturn}
+\mbox{\Hypertarget{enemy_8c_a795e02710a56123bdf1211ea4ca6fec9}\label{enemy_8c_a795e02710a56123bdf1211ea4ca6fec9}} 
+\index{enemy.\+c@{enemy.\+c}!deplacer\+\_\+enemy@{deplacer\+\_\+enemy}}
+\index{deplacer\+\_\+enemy@{deplacer\+\_\+enemy}!enemy.\+c@{enemy.\+c}}
+\subsubsection{\texorpdfstring{deplacer\+\_\+enemy()}{deplacer\_enemy()}}
+{\footnotesize\ttfamily void deplacer\+\_\+enemy (\begin{DoxyParamCaption}\item[{\hyperlink{structenemy}{enemy} $\ast$}]{e }\end{DoxyParamCaption})}
+
+
+
+move the enemy 
+
+
+\begin{DoxyParams}{Parameters}
+{\em enemy} & e is the enemy that we want to move \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+nothing 
+\end{DoxyReturn}
+\mbox{\Hypertarget{enemy_8c_aaba048a59481341f5771dc2706812c86}\label{enemy_8c_aaba048a59481341f5771dc2706812c86}} 
+\index{enemy.\+c@{enemy.\+c}!get\+\_\+input\+\_\+enemy@{get\+\_\+input\+\_\+enemy}}
+\index{get\+\_\+input\+\_\+enemy@{get\+\_\+input\+\_\+enemy}!enemy.\+c@{enemy.\+c}}
+\subsubsection{\texorpdfstring{get\+\_\+input\+\_\+enemy()}{get\_input\_enemy()}}
+{\footnotesize\ttfamily void get\+\_\+input\+\_\+enemy (\begin{DoxyParamCaption}\item[{\hyperlink{structinputenemy}{inputenemy} $\ast$}]{I,  }\item[{\hyperlink{structBackground}{Background}}]{b,  }\item[{\hyperlink{structenemy}{enemy}}]{e\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+get the input of the enemy 
+
+
+\begin{DoxyParams}{Parameters}
+{\em inputenemy} & $\ast$I used to save the input of the enemy \\
+\hline
+{\em \hyperlink{structBackground}{Background}} & b used to know the time to move and display the enemy \\
+\hline
+{\em enemy} & e\mbox{[}\mbox{]} is the list of all the enemies \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+nothing 
+\end{DoxyReturn}
+\mbox{\Hypertarget{enemy_8c_a40ad6eb4ad081e4d051ab4867d56fceb}\label{enemy_8c_a40ad6eb4ad081e4d051ab4867d56fceb}} 
+\index{enemy.\+c@{enemy.\+c}!init\+\_\+enemies@{init\+\_\+enemies}}
+\index{init\+\_\+enemies@{init\+\_\+enemies}!enemy.\+c@{enemy.\+c}}
+\subsubsection{\texorpdfstring{init\+\_\+enemies()}{init\_enemies()}}
+{\footnotesize\ttfamily void init\+\_\+enemies (\begin{DoxyParamCaption}\item[{\hyperlink{structenemy}{enemy}}]{e\mbox{[}$\,$\mbox{]},  }\item[{int}]{lvl,  }\item[{int}]{posenemies\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+loading all the enemies 
+
+
+\begin{DoxyParams}{Parameters}
+{\em enemy} & e\mbox{[}\mbox{]} used to load all the enemies \\
+\hline
+{\em int} & posenemies\mbox{[}\mbox{]} the position of the all the enemies \\
+\hline
+{\em int} & lvl the level \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+nothing 
+\end{DoxyReturn}
+\mbox{\Hypertarget{enemy_8c_a02490106dadf033a23acbc5cca0348e4}\label{enemy_8c_a02490106dadf033a23acbc5cca0348e4}} 
+\index{enemy.\+c@{enemy.\+c}!init\+\_\+enemy@{init\+\_\+enemy}}
+\index{init\+\_\+enemy@{init\+\_\+enemy}!enemy.\+c@{enemy.\+c}}
+\subsubsection{\texorpdfstring{init\+\_\+enemy()}{init\_enemy()}}
+{\footnotesize\ttfamily void init\+\_\+enemy (\begin{DoxyParamCaption}\item[{\hyperlink{structenemy}{enemy} $\ast$}]{e,  }\item[{int}]{pos\+\_\+x,  }\item[{int}]{num }\end{DoxyParamCaption})}
+
+
+
+loading the enemy 
+
+
+\begin{DoxyParams}{Parameters}
+{\em enemy} & $\ast$e used to load the enemy \\
+\hline
+{\em int} & pos\+\_\+x the position of the enemy \\
+\hline
+{\em int} & num used to know the type of the enemy we\textquotesingle{}re loading (the male monster or the female monster) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+nothing 
+\end{DoxyReturn}
+\mbox{\Hypertarget{enemy_8c_a323ff9f9b7b345ac6cac713eb27a5e20}\label{enemy_8c_a323ff9f9b7b345ac6cac713eb27a5e20}} 
+\index{enemy.\+c@{enemy.\+c}!init\+\_\+input\+\_\+enemy@{init\+\_\+input\+\_\+enemy}}
+\index{init\+\_\+input\+\_\+enemy@{init\+\_\+input\+\_\+enemy}!enemy.\+c@{enemy.\+c}}
+\subsubsection{\texorpdfstring{init\+\_\+input\+\_\+enemy()}{init\_input\_enemy()}}
+{\footnotesize\ttfamily void init\+\_\+input\+\_\+enemy (\begin{DoxyParamCaption}\item[{\hyperlink{structinputenemy}{inputenemy} $\ast$}]{I }\end{DoxyParamCaption})}
+
+
+
+initialize the input to zero 
+
+
+\begin{DoxyParams}{Parameters}
+{\em inputenemy} & $\ast$I used to save the input of the enemy \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+nothing 
+\end{DoxyReturn}

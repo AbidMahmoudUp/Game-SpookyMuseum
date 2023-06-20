@@ -1,0 +1,363 @@
+\hypertarget{enigme_8h}{}\section{enigme.\+h File Reference}
+\label{enigme_8h}\index{enigme.\+h@{enigme.\+h}}
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$time.\+h$>$}\newline
+{\ttfamily \#include $<$S\+D\+L/\+S\+D\+L.\+h$>$}\newline
+{\ttfamily \#include $<$S\+D\+L/\+S\+D\+L\+\_\+image.\+h$>$}\newline
+{\ttfamily \#include $<$S\+D\+L/\+S\+D\+L\+\_\+ttf.\+h$>$}\newline
+{\ttfamily \#include $<$S\+D\+L/\+S\+D\+L\+\_\+mixer.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}image.\+h\char`\"{}}\newline
+Include dependency graph for enigme.\+h\+:
+% FIG 0
+This graph shows which files directly or indirectly include this file\+:
+% FIG 1
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structenigme}{enigme}
+\begin{DoxyCompactList}\small\item\em struct for the enigme. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{enigme_8h_a96d101717985ec06f95a1645f04934e0}\label{enigme_8h_a96d101717985ec06f95a1645f04934e0}} 
+typedef struct \hyperlink{structenigme}{enigme} {\bfseries enigme}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{enigme_8h_adcaea89b86e09ba17074e871cbec779b}{choose\+\_\+file\+\_\+randomly} (int $\ast$fich\+\_\+numero, char fichier\mbox{[}$\,$\mbox{]})
+\begin{DoxyCompactList}\small\item\em choose the number of the file \end{DoxyCompactList}\item 
+\hyperlink{structimage}{image} \hyperlink{enigme_8h_ad3d4e95b1971c74ef0a507f7b9c47b4f}{loading\+\_\+background} (\hyperlink{structimage}{image} load)
+\begin{DoxyCompactList}\small\item\em loading the background \end{DoxyCompactList}\item 
+void \hyperlink{enigme_8h_a78d558213495aaa1a7a9a28c349fe750}{loading\+\_\+temps} (\hyperlink{structimage}{image} load\mbox{[}$\,$\mbox{]})
+\begin{DoxyCompactList}\small\item\em loading the animation of the clock \end{DoxyCompactList}\item 
+\hyperlink{structimage}{image} \hyperlink{enigme_8h_a963b285be94d9525b359a46cce41f2c1}{loading\+\_\+vict} (\hyperlink{structimage}{image} load)
+\begin{DoxyCompactList}\small\item\em loading the winning image \end{DoxyCompactList}\item 
+\hyperlink{structimage}{image} \hyperlink{enigme_8h_a14dde5e2c6542b6f516dddad8dcee68c}{loading\+\_\+def} (\hyperlink{structimage}{image} load)
+\begin{DoxyCompactList}\small\item\em loading the lose image \end{DoxyCompactList}\item 
+void \hyperlink{enigme_8h_aca853589fc1373ac1330b639f8fc2cdc}{loading\+\_\+all} (\hyperlink{structimage}{image} $\ast$background, \hyperlink{structimage}{image} $\ast$vict, \hyperlink{structimage}{image} $\ast$def)
+\begin{DoxyCompactList}\small\item\em loading all of the lose,the winning, and the background image \end{DoxyCompactList}\item 
+void \hyperlink{enigme_8h_a9149f5ea8c72f0d436f922c8855ebfa5}{afficher\+\_\+image} (\hyperlink{structimage}{image} p, S\+D\+L\+\_\+\+Surface $\ast$ecran)
+\begin{DoxyCompactList}\small\item\em display the image \end{DoxyCompactList}\item 
+void \hyperlink{enigme_8h_acb2374ec1b30d9ea1c66e946b34a54b7}{init\+\_\+images\+\_\+enigme} (\hyperlink{structimage}{image} $\ast$im, \hyperlink{structimage}{image} $\ast$imo, char file\mbox{[}$\,$\mbox{]}, char fich\mbox{[}$\,$\mbox{]}, char c)
+\begin{DoxyCompactList}\small\item\em loading all of the enigme images \end{DoxyCompactList}\item 
+\hyperlink{structenigme}{enigme} \hyperlink{enigme_8h_ab2646804fa6be2622b5d0a84ad77b600}{loading\+\_\+enigme} (char file\mbox{[}$\,$\mbox{]}, int num\+\_\+fichier)
+\begin{DoxyCompactList}\small\item\em choose the number of the file \end{DoxyCompactList}\item 
+void \hyperlink{enigme_8h_a230db74ce5331fbc3ec8795e63e09d5e}{afficher\+\_\+enigme} (\hyperlink{structenigme}{enigme} e, S\+D\+L\+\_\+\+Surface $\ast$ecran)
+\begin{DoxyCompactList}\small\item\em display all of the enigme images \end{DoxyCompactList}\item 
+void \hyperlink{enigme_8h_ae42d2d11d1df8ac62ade6062e91210fe}{animer} (\hyperlink{structimage}{image} clock\mbox{[}$\,$\mbox{]}, int i, S\+D\+L\+\_\+\+Surface $\ast$ecran)
+\begin{DoxyCompactList}\small\item\em display the image \end{DoxyCompactList}\item 
+int \hyperlink{enigme_8h_a4a6cf194ab800dff601d3084c030d6dc}{result} (\hyperlink{structenigme}{enigme} e, \hyperlink{structimage}{image} vict, \hyperlink{structimage}{image} def, int defo, int vecto, S\+D\+L\+\_\+\+Surface $\ast$ecran)
+\begin{DoxyCompactList}\small\item\em give the result if its true or false \end{DoxyCompactList}\item 
+void \hyperlink{enigme_8h_aaabd5a959ec6b1d93e5ca77f6077f424}{after\+\_\+result} (int resultat, int $\ast$continuer)
+\begin{DoxyCompactList}\small\item\em the ending of the quiz \end{DoxyCompactList}\item 
+void \hyperlink{enigme_8h_ac55e4850819c959d41547768699dc66e}{liberer\+\_\+les\+\_\+images} (\hyperlink{structenigme}{enigme} e, \hyperlink{structimage}{image} background, \hyperlink{structimage}{image} temps\mbox{[}$\,$\mbox{]}, \hyperlink{structimage}{image} vict, \hyperlink{structimage}{image} def)
+\begin{DoxyCompactList}\small\item\em free all the surfaces \end{DoxyCompactList}\item 
+int \hyperlink{enigme_8h_a4a436a27c230c1ea44cbf455a9663cfc}{enigme\+\_\+image} (S\+D\+L\+\_\+\+Surface $\ast$ecran)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{enigme_8h_a230db74ce5331fbc3ec8795e63e09d5e}\label{enigme_8h_a230db74ce5331fbc3ec8795e63e09d5e}} 
+\index{enigme.\+h@{enigme.\+h}!afficher\+\_\+enigme@{afficher\+\_\+enigme}}
+\index{afficher\+\_\+enigme@{afficher\+\_\+enigme}!enigme.\+h@{enigme.\+h}}
+\subsubsection{\texorpdfstring{afficher\+\_\+enigme()}{afficher\_enigme()}}
+{\footnotesize\ttfamily void afficher\+\_\+enigme (\begin{DoxyParamCaption}\item[{\hyperlink{structenigme}{enigme}}]{e,  }\item[{S\+D\+L\+\_\+\+Surface $\ast$}]{ecran }\end{DoxyParamCaption})}
+
+
+
+display all of the enigme images 
+
+
+\begin{DoxyParams}{Parameters}
+{\em enigme} & e the enigme that has the images to display in the screen \\
+\hline
+{\em S\+D\+L\+\_\+\+Surface} & $\ast$ecran the surface where we\textquotesingle{}re going to blit the image on it \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+nothing 
+\end{DoxyReturn}
+\mbox{\Hypertarget{enigme_8h_a9149f5ea8c72f0d436f922c8855ebfa5}\label{enigme_8h_a9149f5ea8c72f0d436f922c8855ebfa5}} 
+\index{enigme.\+h@{enigme.\+h}!afficher\+\_\+image@{afficher\+\_\+image}}
+\index{afficher\+\_\+image@{afficher\+\_\+image}!enigme.\+h@{enigme.\+h}}
+\subsubsection{\texorpdfstring{afficher\+\_\+image()}{afficher\_image()}}
+{\footnotesize\ttfamily void afficher\+\_\+image (\begin{DoxyParamCaption}\item[{\hyperlink{structimage}{image}}]{p,  }\item[{S\+D\+L\+\_\+\+Surface $\ast$}]{ecran }\end{DoxyParamCaption})}
+
+
+
+display the image 
+
+
+\begin{DoxyParams}{Parameters}
+{\em image} & p the image to display in the screen \\
+\hline
+{\em S\+D\+L\+\_\+\+Surface} & $\ast$ecran the surface where we\textquotesingle{}re going to blit the image on it \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+nothing 
+\end{DoxyReturn}
+\mbox{\Hypertarget{enigme_8h_aaabd5a959ec6b1d93e5ca77f6077f424}\label{enigme_8h_aaabd5a959ec6b1d93e5ca77f6077f424}} 
+\index{enigme.\+h@{enigme.\+h}!after\+\_\+result@{after\+\_\+result}}
+\index{after\+\_\+result@{after\+\_\+result}!enigme.\+h@{enigme.\+h}}
+\subsubsection{\texorpdfstring{after\+\_\+result()}{after\_result()}}
+{\footnotesize\ttfamily void after\+\_\+result (\begin{DoxyParamCaption}\item[{int}]{resultat,  }\item[{int $\ast$}]{continuer }\end{DoxyParamCaption})}
+
+
+
+the ending of the quiz 
+
+
+\begin{DoxyParams}{Parameters}
+{\em int} & $\ast$continuer that we\textquotesingle{}re going to use it to stop the boucle for\{\} \\
+\hline
+{\em int} & resultat is the result if its true or false \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+nothing 
+\end{DoxyReturn}
+\mbox{\Hypertarget{enigme_8h_ae42d2d11d1df8ac62ade6062e91210fe}\label{enigme_8h_ae42d2d11d1df8ac62ade6062e91210fe}} 
+\index{enigme.\+h@{enigme.\+h}!animer@{animer}}
+\index{animer@{animer}!enigme.\+h@{enigme.\+h}}
+\subsubsection{\texorpdfstring{animer()}{animer()}}
+{\footnotesize\ttfamily void animer (\begin{DoxyParamCaption}\item[{\hyperlink{structimage}{image}}]{clock\mbox{[}$\,$\mbox{]},  }\item[{int}]{i,  }\item[{S\+D\+L\+\_\+\+Surface $\ast$}]{ecran }\end{DoxyParamCaption})}
+
+
+
+display the image 
+
+
+\begin{DoxyParams}{Parameters}
+{\em image} & load\mbox{[}\mbox{]} is an images list used to display all the images in it \\
+\hline
+{\em S\+D\+L\+\_\+\+Surface} & $\ast$ecran the surface where we\textquotesingle{}re going to blit the image on it \\
+\hline
+{\em int} & i is the number of the image to display \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+nothing 
+\end{DoxyReturn}
+\mbox{\Hypertarget{enigme_8h_adcaea89b86e09ba17074e871cbec779b}\label{enigme_8h_adcaea89b86e09ba17074e871cbec779b}} 
+\index{enigme.\+h@{enigme.\+h}!choose\+\_\+file\+\_\+randomly@{choose\+\_\+file\+\_\+randomly}}
+\index{choose\+\_\+file\+\_\+randomly@{choose\+\_\+file\+\_\+randomly}!enigme.\+h@{enigme.\+h}}
+\subsubsection{\texorpdfstring{choose\+\_\+file\+\_\+randomly()}{choose\_file\_randomly()}}
+{\footnotesize\ttfamily void choose\+\_\+file\+\_\+randomly (\begin{DoxyParamCaption}\item[{int $\ast$}]{fich\+\_\+numero,  }\item[{char}]{fichier\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+choose the number of the file 
+
+
+\begin{DoxyParams}{Parameters}
+{\em int} & $\ast$fich\+\_\+numero used to save the number of the file \\
+\hline
+{\em char} & fichier has the link of the file \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+nothing 
+\end{DoxyReturn}
+\mbox{\Hypertarget{enigme_8h_a4a436a27c230c1ea44cbf455a9663cfc}\label{enigme_8h_a4a436a27c230c1ea44cbf455a9663cfc}} 
+\index{enigme.\+h@{enigme.\+h}!enigme\+\_\+image@{enigme\+\_\+image}}
+\index{enigme\+\_\+image@{enigme\+\_\+image}!enigme.\+h@{enigme.\+h}}
+\subsubsection{\texorpdfstring{enigme\+\_\+image()}{enigme\_image()}}
+{\footnotesize\ttfamily int enigme\+\_\+image (\begin{DoxyParamCaption}\item[{S\+D\+L\+\_\+\+Surface $\ast$}]{ecran }\end{DoxyParamCaption})}
+
+fichier \mbox{\Hypertarget{enigme_8h_acb2374ec1b30d9ea1c66e946b34a54b7}\label{enigme_8h_acb2374ec1b30d9ea1c66e946b34a54b7}} 
+\index{enigme.\+h@{enigme.\+h}!init\+\_\+images\+\_\+enigme@{init\+\_\+images\+\_\+enigme}}
+\index{init\+\_\+images\+\_\+enigme@{init\+\_\+images\+\_\+enigme}!enigme.\+h@{enigme.\+h}}
+\subsubsection{\texorpdfstring{init\+\_\+images\+\_\+enigme()}{init\_images\_enigme()}}
+{\footnotesize\ttfamily void init\+\_\+images\+\_\+enigme (\begin{DoxyParamCaption}\item[{\hyperlink{structimage}{image} $\ast$}]{im,  }\item[{\hyperlink{structimage}{image} $\ast$}]{imo,  }\item[{char}]{file\mbox{[}$\,$\mbox{]},  }\item[{char}]{fich\mbox{[}$\,$\mbox{]},  }\item[{char}]{c }\end{DoxyParamCaption})}
+
+
+
+loading all of the enigme images 
+
+
+\begin{DoxyParams}{Parameters}
+{\em $\ast$im} & used to load the image not selected \\
+\hline
+{\em image} & $\ast$imo to load the selected image \\
+\hline
+{\em char} & file\mbox{[}\mbox{]} has the link of the not selected image \\
+\hline
+{\em char} & fich\mbox{[}\mbox{]} has the link of the selected image \\
+\hline
+{\em char} & c contains the number of the image to bring \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+nothing 
+\end{DoxyReturn}
+\mbox{\Hypertarget{enigme_8h_ac55e4850819c959d41547768699dc66e}\label{enigme_8h_ac55e4850819c959d41547768699dc66e}} 
+\index{enigme.\+h@{enigme.\+h}!liberer\+\_\+les\+\_\+images@{liberer\+\_\+les\+\_\+images}}
+\index{liberer\+\_\+les\+\_\+images@{liberer\+\_\+les\+\_\+images}!enigme.\+h@{enigme.\+h}}
+\subsubsection{\texorpdfstring{liberer\+\_\+les\+\_\+images()}{liberer\_les\_images()}}
+{\footnotesize\ttfamily void liberer\+\_\+les\+\_\+images (\begin{DoxyParamCaption}\item[{\hyperlink{structenigme}{enigme}}]{e,  }\item[{\hyperlink{structimage}{image}}]{background,  }\item[{\hyperlink{structimage}{image}}]{temps\mbox{[}$\,$\mbox{]},  }\item[{\hyperlink{structimage}{image}}]{vict,  }\item[{\hyperlink{structimage}{image}}]{def }\end{DoxyParamCaption})}
+
+
+
+free all the surfaces 
+
+
+\begin{DoxyParams}{Parameters}
+{\em enigme} & e the enigme that has the images to display in the screen \\
+\hline
+{\em image} & vict contains the winning image \\
+\hline
+{\em image} & def contains the lose image \\
+\hline
+{\em image} & temps\mbox{[}\mbox{]} is an images list used to load the images in it \\
+\hline
+{\em image} & background contains the background imag \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+nothing 
+\end{DoxyReturn}
+\mbox{\Hypertarget{enigme_8h_aca853589fc1373ac1330b639f8fc2cdc}\label{enigme_8h_aca853589fc1373ac1330b639f8fc2cdc}} 
+\index{enigme.\+h@{enigme.\+h}!loading\+\_\+all@{loading\+\_\+all}}
+\index{loading\+\_\+all@{loading\+\_\+all}!enigme.\+h@{enigme.\+h}}
+\subsubsection{\texorpdfstring{loading\+\_\+all()}{loading\_all()}}
+{\footnotesize\ttfamily void loading\+\_\+all (\begin{DoxyParamCaption}\item[{\hyperlink{structimage}{image} $\ast$}]{background,  }\item[{\hyperlink{structimage}{image} $\ast$}]{vict,  }\item[{\hyperlink{structimage}{image} $\ast$}]{def }\end{DoxyParamCaption})}
+
+
+
+loading all of the lose,the winning, and the background image 
+
+
+\begin{DoxyParams}{Parameters}
+{\em image} & $\ast$background used to load the background image \\
+\hline
+{\em image} & image $\ast$vict to load the winning image \\
+\hline
+{\em image} & image $\ast$def used to load the lose image \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+nothing 
+\end{DoxyReturn}
+\mbox{\Hypertarget{enigme_8h_ad3d4e95b1971c74ef0a507f7b9c47b4f}\label{enigme_8h_ad3d4e95b1971c74ef0a507f7b9c47b4f}} 
+\index{enigme.\+h@{enigme.\+h}!loading\+\_\+background@{loading\+\_\+background}}
+\index{loading\+\_\+background@{loading\+\_\+background}!enigme.\+h@{enigme.\+h}}
+\subsubsection{\texorpdfstring{loading\+\_\+background()}{loading\_background()}}
+{\footnotesize\ttfamily \hyperlink{structimage}{image} loading\+\_\+background (\begin{DoxyParamCaption}\item[{\hyperlink{structimage}{image}}]{load }\end{DoxyParamCaption})}
+
+
+
+loading the background 
+
+
+\begin{DoxyParams}{Parameters}
+{\em image} & load used to load the image \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+load 
+\end{DoxyReturn}
+\mbox{\Hypertarget{enigme_8h_a14dde5e2c6542b6f516dddad8dcee68c}\label{enigme_8h_a14dde5e2c6542b6f516dddad8dcee68c}} 
+\index{enigme.\+h@{enigme.\+h}!loading\+\_\+def@{loading\+\_\+def}}
+\index{loading\+\_\+def@{loading\+\_\+def}!enigme.\+h@{enigme.\+h}}
+\subsubsection{\texorpdfstring{loading\+\_\+def()}{loading\_def()}}
+{\footnotesize\ttfamily \hyperlink{structimage}{image} loading\+\_\+def (\begin{DoxyParamCaption}\item[{\hyperlink{structimage}{image}}]{load }\end{DoxyParamCaption})}
+
+
+
+loading the lose image 
+
+
+\begin{DoxyParams}{Parameters}
+{\em image} & load used to load the image \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+load 
+\end{DoxyReturn}
+\mbox{\Hypertarget{enigme_8h_ab2646804fa6be2622b5d0a84ad77b600}\label{enigme_8h_ab2646804fa6be2622b5d0a84ad77b600}} 
+\index{enigme.\+h@{enigme.\+h}!loading\+\_\+enigme@{loading\+\_\+enigme}}
+\index{loading\+\_\+enigme@{loading\+\_\+enigme}!enigme.\+h@{enigme.\+h}}
+\subsubsection{\texorpdfstring{loading\+\_\+enigme()}{loading\_enigme()}}
+{\footnotesize\ttfamily \hyperlink{structenigme}{enigme} loading\+\_\+enigme (\begin{DoxyParamCaption}\item[{char}]{file\mbox{[}$\,$\mbox{]},  }\item[{int}]{num\+\_\+fichier }\end{DoxyParamCaption})}
+
+
+
+choose the number of the file 
+
+
+\begin{DoxyParams}{Parameters}
+{\em int} & num\+\_\+fichier contains the number of the file \\
+\hline
+{\em char} & file has the link of the file \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+enigme 
+\end{DoxyReturn}
+\mbox{\Hypertarget{enigme_8h_a78d558213495aaa1a7a9a28c349fe750}\label{enigme_8h_a78d558213495aaa1a7a9a28c349fe750}} 
+\index{enigme.\+h@{enigme.\+h}!loading\+\_\+temps@{loading\+\_\+temps}}
+\index{loading\+\_\+temps@{loading\+\_\+temps}!enigme.\+h@{enigme.\+h}}
+\subsubsection{\texorpdfstring{loading\+\_\+temps()}{loading\_temps()}}
+{\footnotesize\ttfamily void loading\+\_\+temps (\begin{DoxyParamCaption}\item[{\hyperlink{structimage}{image}}]{load\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+loading the animation of the clock 
+
+
+\begin{DoxyParams}{Parameters}
+{\em image} & load\mbox{[}\mbox{]} is an images list used to load the images in it \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+nothing 
+\end{DoxyReturn}
+\mbox{\Hypertarget{enigme_8h_a963b285be94d9525b359a46cce41f2c1}\label{enigme_8h_a963b285be94d9525b359a46cce41f2c1}} 
+\index{enigme.\+h@{enigme.\+h}!loading\+\_\+vict@{loading\+\_\+vict}}
+\index{loading\+\_\+vict@{loading\+\_\+vict}!enigme.\+h@{enigme.\+h}}
+\subsubsection{\texorpdfstring{loading\+\_\+vict()}{loading\_vict()}}
+{\footnotesize\ttfamily \hyperlink{structimage}{image} loading\+\_\+vict (\begin{DoxyParamCaption}\item[{\hyperlink{structimage}{image}}]{load }\end{DoxyParamCaption})}
+
+
+
+loading the winning image 
+
+
+\begin{DoxyParams}{Parameters}
+{\em image} & load used to load the image \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+load 
+\end{DoxyReturn}
+\mbox{\Hypertarget{enigme_8h_a4a6cf194ab800dff601d3084c030d6dc}\label{enigme_8h_a4a6cf194ab800dff601d3084c030d6dc}} 
+\index{enigme.\+h@{enigme.\+h}!result@{result}}
+\index{result@{result}!enigme.\+h@{enigme.\+h}}
+\subsubsection{\texorpdfstring{result()}{result()}}
+{\footnotesize\ttfamily int result (\begin{DoxyParamCaption}\item[{\hyperlink{structenigme}{enigme}}]{e,  }\item[{\hyperlink{structimage}{image}}]{vict,  }\item[{\hyperlink{structimage}{image}}]{def,  }\item[{int}]{defo,  }\item[{int}]{victo,  }\item[{S\+D\+L\+\_\+\+Surface $\ast$}]{ecran }\end{DoxyParamCaption})}
+
+
+
+give the result if its true or false 
+
+
+\begin{DoxyParams}{Parameters}
+{\em enigme} & e the enigme that has the images to display in the screen \\
+\hline
+{\em image} & vict contains the winning image \\
+\hline
+{\em image} & def contains the lose image \\
+\hline
+{\em S\+D\+L\+\_\+\+Surface} & $\ast$ecran the surface where we\textquotesingle{}re going to blit the image on it \\
+\hline
+{\em int} & defo is the integer which is ging to contains the number 1 if the result is false \\
+\hline
+{\em int} & vecto is the integer which is ging to contains the number 1 if the result is true \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+result 
+\end{DoxyReturn}

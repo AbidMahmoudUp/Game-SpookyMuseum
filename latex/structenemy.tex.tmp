@@ -1,0 +1,23 @@
+\hypertarget{structenemy}{}\section{enemy Struct Reference}
+\label{structenemy}\index{enemy@{enemy}}
+
+
+Collaboration diagram for enemy\+:
+% FIG 0
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structenemy_a5e20423f2b9f4d4c62982d2de39cfb66}\label{structenemy_a5e20423f2b9f4d4c62982d2de39cfb66}} 
+S\+D\+L\+\_\+\+Rect {\bfseries pos}
+\item 
+\mbox{\Hypertarget{structenemy_a504a17cb154d333470cee30fa8e88763}\label{structenemy_a504a17cb154d333470cee30fa8e88763}} 
+\hyperlink{structimagee}{imagee} {\bfseries gauche} \mbox{[}15\mbox{]}
+\item 
+\mbox{\Hypertarget{structenemy_ad5dd068b74cc7ea960263716a999067d}\label{structenemy_ad5dd068b74cc7ea960263716a999067d}} 
+\hyperlink{structimagee}{imagee} {\bfseries attack} \mbox{[}15\mbox{]}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+enemy.\+h\end{DoxyCompactItemize}

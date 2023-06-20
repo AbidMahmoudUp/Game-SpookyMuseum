@@ -1,0 +1,437 @@
+\hypertarget{player_8h}{}\section{player.\+h File Reference}
+\label{player_8h}\index{player.\+h@{player.\+h}}
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$S\+D\+L/\+S\+D\+L.\+h$>$}\newline
+{\ttfamily \#include $<$S\+D\+L/\+S\+D\+L\+\_\+image.\+h$>$}\newline
+{\ttfamily \#include $<$S\+D\+L/\+S\+D\+L\+\_\+ttf.\+h$>$}\newline
+{\ttfamily \#include $<$S\+D\+L/\+S\+D\+L\+\_\+mixer.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}jeu.\+h\char`\"{}}\newline
+Include dependency graph for player.\+h\+:
+% FIG 0
+This graph shows which files directly or indirectly include this file\+:
+% FIG 1
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structplayer}{player}
+\begin{DoxyCompactList}\small\item\em struct for the player. \end{DoxyCompactList}\item 
+struct \hyperlink{structimagee}{imagee}
+\begin{DoxyCompactList}\small\item\em struct for the background. \end{DoxyCompactList}\item 
+struct \hyperlink{structtxt}{txt}
+\begin{DoxyCompactList}\small\item\em struct for the text. \end{DoxyCompactList}\item 
+struct \hyperlink{structInput}{Input}
+\begin{DoxyCompactList}\small\item\em struct for the input. \end{DoxyCompactList}\item 
+struct \hyperlink{structminimap}{minimap}
+\item 
+struct \hyperlink{structBackground}{Background}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{player_8h_aee551d17fffb6235cc7123499dbf7d65}\label{player_8h_aee551d17fffb6235cc7123499dbf7d65}} 
+\#define {\bfseries J\+U\+MP}~4
+\item 
+\mbox{\Hypertarget{player_8h_ac39d47e9242358779266648724f42fbb}\label{player_8h_ac39d47e9242358779266648724f42fbb}} 
+\#define {\bfseries R\+E\+P\+OS}~3
+\item 
+\mbox{\Hypertarget{player_8h_a80fb826a684cf3f0d306b22aa100ddac}\label{player_8h_a80fb826a684cf3f0d306b22aa100ddac}} 
+\#define {\bfseries R\+I\+G\+HT}~2
+\item 
+\mbox{\Hypertarget{player_8h_a437ef08681e7210d6678427030446a54}\label{player_8h_a437ef08681e7210d6678427030446a54}} 
+\#define {\bfseries L\+E\+FT}~1
+\item 
+\mbox{\Hypertarget{player_8h_afb6e28897108d29161972b6df7980a86}\label{player_8h_afb6e28897108d29161972b6df7980a86}} 
+\#define {\bfseries G\+R\+A\+V\+I\+T\+Y\+\_\+\+S\+P\+E\+ED}~4
+\item 
+\mbox{\Hypertarget{player_8h_a993d3699a7c2be36af8e61acfee08351}\label{player_8h_a993d3699a7c2be36af8e61acfee08351}} 
+\#define {\bfseries J\+U\+M\+P\+\_\+\+H\+A\+U\+T\+E\+UR}~13
+\item 
+\mbox{\Hypertarget{player_8h_a591d2df5efffb2e6d47bd2e6f8191d69}\label{player_8h_a591d2df5efffb2e6d47bd2e6f8191d69}} 
+\#define {\bfseries M\+A\+X\+\_\+\+F\+A\+L\+L\+\_\+\+S\+P\+E\+ED}~400
+\item 
+\mbox{\Hypertarget{player_8h_a8672574bac3b324798e610ea38d99536}\label{player_8h_a8672574bac3b324798e610ea38d99536}} 
+\#define {\bfseries A\+X\+E\+\_\+X}~15
+\item 
+\mbox{\Hypertarget{player_8h_a496799867d2821570b700e7ac7b6dfda}\label{player_8h_a496799867d2821570b700e7ac7b6dfda}} 
+\#define {\bfseries A\+T\+T\+A\+C\+K\+\_\+\+R\+I\+G\+HT}~1
+\item 
+\mbox{\Hypertarget{player_8h_ac0acebdcfae22d89c942ccca97001acb}\label{player_8h_ac0acebdcfae22d89c942ccca97001acb}} 
+\#define {\bfseries A\+T\+T\+A\+C\+K\+\_\+\+L\+E\+FT}~2
+\item 
+\mbox{\Hypertarget{player_8h_a38ab53e6ff554baf479de1fa4c7fdc6c}\label{player_8h_a38ab53e6ff554baf479de1fa4c7fdc6c}} 
+\#define {\bfseries W\+A\+L\+K\+\_\+\+R\+I\+G\+HT}~2
+\item 
+\mbox{\Hypertarget{player_8h_adb942f69642c32e6d38fefae7e70fd4b}\label{player_8h_adb942f69642c32e6d38fefae7e70fd4b}} 
+\#define {\bfseries W\+A\+L\+K\+\_\+\+L\+E\+FT}~1
+\item 
+\mbox{\Hypertarget{player_8h_a578834bfb76a4284c5a7c4fc73537877}\label{player_8h_a578834bfb76a4284c5a7c4fc73537877}} 
+\#define {\bfseries J\+U\+M\+P\+\_\+\+R\+I\+G\+HT}~4
+\item 
+\mbox{\Hypertarget{player_8h_a92abde700693b9630ff3cb2412d04d8d}\label{player_8h_a92abde700693b9630ff3cb2412d04d8d}} 
+\#define {\bfseries J\+U\+M\+P\+\_\+\+L\+E\+FT}~5
+\item 
+\mbox{\Hypertarget{player_8h_a9c21a7caee326d7803b94ae1952b27ca}\label{player_8h_a9c21a7caee326d7803b94ae1952b27ca}} 
+\#define {\bfseries I\+D\+LE}~3
+\item 
+\mbox{\Hypertarget{player_8h_aac3553b3932cbfeeac4526ce7ca0336b}\label{player_8h_aac3553b3932cbfeeac4526ce7ca0336b}} 
+\#define {\bfseries S\+P\+E\+ED}~5
+\item 
+\mbox{\Hypertarget{player_8h_ab5889105dcd019008c9448dff61323f6}\label{player_8h_ab5889105dcd019008c9448dff61323f6}} 
+\#define {\bfseries I\+N\+IT}~8
+\item 
+\mbox{\Hypertarget{player_8h_a30891001eeedcf5ed3334e26d7ce12e2}\label{player_8h_a30891001eeedcf5ed3334e26d7ce12e2}} 
+\#define {\bfseries E\+N\+D\+\_\+\+R\+I\+G\+HT}~1609
+\item 
+\mbox{\Hypertarget{player_8h_ad678bb99774d0a8d24f3dff2e9c05e82}\label{player_8h_ad678bb99774d0a8d24f3dff2e9c05e82}} 
+\#define {\bfseries E\+N\+D\+\_\+\+L\+E\+FT}~0
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{player_8h_ad2f0a6b04d2c814853a0ff9898ffc69a}\label{player_8h_ad2f0a6b04d2c814853a0ff9898ffc69a}} 
+typedef struct \hyperlink{structimagee}{imagee} {\bfseries imagee}
+\item 
+\mbox{\Hypertarget{player_8h_af40a611aff74b489090a3f7f5bedc72d}\label{player_8h_af40a611aff74b489090a3f7f5bedc72d}} 
+typedef struct \hyperlink{structplayer}{player} {\bfseries player}
+\item 
+\mbox{\Hypertarget{player_8h_a50add59f15c5c992068e37c36d568d8f}\label{player_8h_a50add59f15c5c992068e37c36d568d8f}} 
+typedef struct \hyperlink{structtxt}{txt} {\bfseries txt}
+\item 
+\mbox{\Hypertarget{player_8h_ad1857177d745cb364a184655f148144e}\label{player_8h_ad1857177d745cb364a184655f148144e}} 
+typedef struct \hyperlink{structInput}{Input} {\bfseries Input}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{player_8h_a8aac90aa4eb6858ff8ea3ba89d07b406}\label{player_8h_a8aac90aa4eb6858ff8ea3ba89d07b406}} 
+\hyperlink{structBackground}{Background} {\bfseries init\+Back} (\hyperlink{structBackground}{Background} b, int lvl)
+\item 
+\mbox{\Hypertarget{player_8h_a113ce678e1d36ba7a7c02cc06e60f6a2}\label{player_8h_a113ce678e1d36ba7a7c02cc06e60f6a2}} 
+void {\bfseries afficher\+Back} (\hyperlink{structBackground}{Background} b, S\+D\+L\+\_\+\+Surface $\ast$ecran)
+\item 
+\mbox{\Hypertarget{player_8h_a576dd89bb8d95560e35e2918aa468508}\label{player_8h_a576dd89bb8d95560e35e2918aa468508}} 
+void {\bfseries scrolling\+Back} (\hyperlink{structBackground}{Background} $\ast$b, \hyperlink{structplayer}{player} $\ast$p, \hyperlink{structInput}{Input} I, int $\ast$updated)
+\item 
+\mbox{\Hypertarget{player_8h_a21e6f4b7cf04caf608068e81c049e6b7}\label{player_8h_a21e6f4b7cf04caf608068e81c049e6b7}} 
+void {\bfseries init\+\_\+txt\+\_\+score} (\hyperlink{structtxt}{txt} $\ast$\hyperlink{structtxt}{txt}, int score)
+\item 
+\mbox{\Hypertarget{player_8h_a38219c4121b2b4b87fbb4b57d7e38279}\label{player_8h_a38219c4121b2b4b87fbb4b57d7e38279}} 
+void {\bfseries init\+\_\+txt\+\_\+vie} (\hyperlink{structtxt}{txt} $\ast$\hyperlink{structtxt}{txt}, int vie)
+\item 
+\mbox{\Hypertarget{player_8h_ae0913d8d071c619422f8d0875b415d1e}\label{player_8h_ae0913d8d071c619422f8d0875b415d1e}} 
+void {\bfseries afficher\+\_\+txt} (\hyperlink{structtxt}{txt} t, S\+D\+L\+\_\+\+Surface $\ast$ecran)
+\item 
+void \hyperlink{player_8h_a6000c44a7a82ab822604bc928b665292}{get\+Input} (\hyperlink{structInput}{Input} $\ast$input, int $\ast$\hyperlink{enemy_8h_a3e4c0acb197f66cd0ec16add408425bc}{pause})
+\begin{DoxyCompactList}\small\item\em l input donner par le clavier \end{DoxyCompactList}\item 
+void \hyperlink{player_8h_abb2394626933a38129599c801f0ef54f}{deplacer\+Perso} (\hyperlink{structplayer}{player} $\ast$perso, \hyperlink{structInput}{Input} $\ast$in, \hyperlink{structBackground}{Background} $\ast$b, int $\ast$updated, Uint32 dt)
+\begin{DoxyCompactList}\small\item\em le deplacement du personage \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{player_8h_a6c719f782c7e1fc41cc043809169f5d2}\label{player_8h_a6c719f782c7e1fc41cc043809169f5d2}} 
+void {\bfseries sauter} (\hyperlink{structplayer}{player} $\ast$perso)
+\item 
+void \hyperlink{player_8h_a3cb9c745988aa16c5b06def286d24ff2}{afficher\+Perso} (\hyperlink{structplayer}{player} $\ast$perso, S\+D\+L\+\_\+\+Surface $\ast$ecran)
+\begin{DoxyCompactList}\small\item\em affichage du personage \end{DoxyCompactList}\item 
+void \hyperlink{player_8h_a4863f4542229052bbfe03766948e9634}{animer\+Perso} (\hyperlink{structplayer}{player} $\ast$perso, S\+D\+L\+\_\+\+Surface $\ast$ecran)
+\begin{DoxyCompactList}\small\item\em animation du personage \end{DoxyCompactList}\item 
+void \hyperlink{player_8h_a6b31c46f51fc5187c3fa8839548f11d3}{init\+\_\+player} (\hyperlink{structplayer}{player} $\ast$perso, int posperso)
+\begin{DoxyCompactList}\small\item\em initialisation du personage \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{player_8h_a278a2ffbb995f7837d4970a4d7435b63}\label{player_8h_a278a2ffbb995f7837d4970a4d7435b63}} 
+void {\bfseries delay} (unsigned int frame\+Limit)
+\item 
+void \hyperlink{player_8h_ab012c400c10006a105839119f4269b13}{change\+Animation} (\hyperlink{structplayer}{player} $\ast$entity, char $\ast$name)
+\begin{DoxyCompactList}\small\item\em changement de l image \end{DoxyCompactList}\item 
+void \hyperlink{player_8h_a5cde04b2abf0f01b430bbaad6eccbb7c}{init\+\_\+vie} (\hyperlink{structplayer}{player} $\ast$vie)
+\begin{DoxyCompactList}\small\item\em initialisation de la vie \end{DoxyCompactList}\item 
+void \hyperlink{player_8h_a5119e0d3b75e3579bb20a9848f0c0e56}{afficher\+\_\+vie} (\hyperlink{structplayer}{player} vie, S\+D\+L\+\_\+\+Surface $\ast$ecran)
+\begin{DoxyCompactList}\small\item\em affichage de la vie \end{DoxyCompactList}\item 
+void \hyperlink{player_8h_ac6fd1c5406ec06d81b464179c4cc746f}{colision} (\hyperlink{structplayer}{player} $\ast$perso)
+\begin{DoxyCompactList}\small\item\em la collision avec les extrimter de l ecran \end{DoxyCompactList}\item 
+void \hyperlink{player_8h_a7d87dbdf9bf31bda8a027c00a5674509}{init\+\_\+coin} (\hyperlink{structplayer}{player} $\ast$coin)
+\begin{DoxyCompactList}\small\item\em initialisation score \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{player_8h_aca0a8599018a5e9bea921cf1a7f9fde7}\label{player_8h_aca0a8599018a5e9bea921cf1a7f9fde7}} 
+void {\bfseries init\+\_\+background\+\_\+pause} (\hyperlink{structimagee}{imagee} $\ast$background)
+\item 
+\mbox{\Hypertarget{player_8h_aa96e147d679ef336540e1bc332d2444e}\label{player_8h_aa96e147d679ef336540e1bc332d2444e}} 
+void {\bfseries init\+\_\+resume\+\_\+pause} (\hyperlink{structimagee}{imagee} $\ast$resume)
+\item 
+\mbox{\Hypertarget{player_8h_a6ab0541641de39ede33bb417fe628a09}\label{player_8h_a6ab0541641de39ede33bb417fe628a09}} 
+void {\bfseries init\+\_\+resumeo\+\_\+pause} (\hyperlink{structimagee}{imagee} $\ast$resume)
+\item 
+\mbox{\Hypertarget{player_8h_ad22628612f8c67536b01cee5ed6965bd}\label{player_8h_ad22628612f8c67536b01cee5ed6965bd}} 
+void {\bfseries init\+\_\+restart\+\_\+pause} (\hyperlink{structimagee}{imagee} $\ast$resume)
+\item 
+\mbox{\Hypertarget{player_8h_a884a70fbd96b107279b950587dd941f3}\label{player_8h_a884a70fbd96b107279b950587dd941f3}} 
+void {\bfseries init\+\_\+restarto\+\_\+pause} (\hyperlink{structimagee}{imagee} $\ast$resume)
+\item 
+\mbox{\Hypertarget{player_8h_aaa2afd2496bef6fc988bb7152281369d}\label{player_8h_aaa2afd2496bef6fc988bb7152281369d}} 
+void {\bfseries init\+\_\+saveandquit\+\_\+pause} (\hyperlink{structimagee}{imagee} $\ast$resume)
+\item 
+\mbox{\Hypertarget{player_8h_a20b35e25b84fccf3638291331c316f04}\label{player_8h_a20b35e25b84fccf3638291331c316f04}} 
+void {\bfseries init\+\_\+saveandquito\+\_\+pause} (\hyperlink{structimagee}{imagee} $\ast$resume)
+\item 
+\mbox{\Hypertarget{player_8h_a02e8f780411611828eeabef99683da20}\label{player_8h_a02e8f780411611828eeabef99683da20}} 
+void {\bfseries afficher\+\_\+pause} (\hyperlink{structimagee}{imagee} p, S\+D\+L\+\_\+\+Surface $\ast$ecran)
+\item 
+\mbox{\Hypertarget{player_8h_a3cc387ea4c9c8da9e2593b25634aa3ee}\label{player_8h_a3cc387ea4c9c8da9e2593b25634aa3ee}} 
+S\+D\+L\+\_\+\+Color {\bfseries Get\+Pixel} (S\+D\+L\+\_\+\+Surface $\ast$\hyperlink{structBackground}{Background}, int x, int y)
+\item 
+\mbox{\Hypertarget{player_8h_aa1fae35695f864663acb42bd9ab37469}\label{player_8h_aa1fae35695f864663acb42bd9ab37469}} 
+int {\bfseries collision\+PP} (\hyperlink{structplayer}{player} p, S\+D\+L\+\_\+\+Surface $\ast$Masque)
+\item 
+\mbox{\Hypertarget{player_8h_aa628e3626f5a0b6a330763db350368b3}\label{player_8h_aa628e3626f5a0b6a330763db350368b3}} 
+void {\bfseries init\+\_\+win\+\_\+lvl} (\hyperlink{structimagee}{imagee} $\ast$load)
+\item 
+\mbox{\Hypertarget{player_8h_a1499ea1107b11dcd8b2d4cb1a239da66}\label{player_8h_a1499ea1107b11dcd8b2d4cb1a239da66}} 
+void {\bfseries init\+\_\+lose\+\_\+lvl} (\hyperlink{structimagee}{imagee} $\ast$load)
+\item 
+void \hyperlink{player_8h_a3832edc3cfb3745638389fd83a929ce3}{afficher\+Tous} (\hyperlink{structplayer}{player} $\ast$perso, \hyperlink{structplayer}{player} vie, \hyperlink{structplayer}{player} coin, S\+D\+L\+\_\+\+Surface $\ast$ecran, \hyperlink{structBackground}{Background} b, \hyperlink{structtxt}{txt} txt\+\_\+scoree, \hyperlink{structtxt}{txt} txt\+\_\+viee)
+\begin{DoxyCompactList}\small\item\em affichage de tous les image \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{player_8h_a3a5965777054f26382b4ed57b94b31cc}\label{player_8h_a3a5965777054f26382b4ed57b94b31cc}} 
+void {\bfseries play} (\hyperlink{structBackground}{Background} b, \hyperlink{structimagee}{imagee} win, \hyperlink{structimagee}{imagee} lose, int lvl, int posperso, int posbackg, int viee, int score, int posenemies\mbox{[}$\,$\mbox{]}, S\+D\+L\+\_\+\+Surface $\ast$ecran)
+\item 
+\mbox{\Hypertarget{player_8h_a68b5beb16a5719975d5dcdf1d68be488}\label{player_8h_a68b5beb16a5719975d5dcdf1d68be488}} 
+void {\bfseries get\+Input\+For\+Two} (\hyperlink{structInput}{Input} $\ast$input)
+\item 
+\mbox{\Hypertarget{player_8h_a8832ce60281411d2d4547d455ff7480f}\label{player_8h_a8832ce60281411d2d4547d455ff7480f}} 
+void {\bfseries init\+\_\+player2} (\hyperlink{structplayer}{player} $\ast$perso)
+\item 
+\mbox{\Hypertarget{player_8h_a939ac58eeb0a5ad7efe53302c48fe4ff}\label{player_8h_a939ac58eeb0a5ad7efe53302c48fe4ff}} 
+void {\bfseries deplacer\+\_\+player2} (\hyperlink{structplayer}{player} $\ast$perso, \hyperlink{structInput}{Input} $\ast$in)
+\item 
+\mbox{\Hypertarget{player_8h_ad7b135391ce653171620b936851a337a}\label{player_8h_ad7b135391ce653171620b936851a337a}} 
+void {\bfseries deplacer\+Perso1} (\hyperlink{structplayer}{player} $\ast$perso, \hyperlink{structInput}{Input} $\ast$in)
+\item 
+\mbox{\Hypertarget{player_8h_ad0c3087417e95ceb4bbd837b520a4203}\label{player_8h_ad0c3087417e95ceb4bbd837b520a4203}} 
+void {\bfseries init\+\_\+player1} (\hyperlink{structplayer}{player} $\ast$perso)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{player_8h_a5119e0d3b75e3579bb20a9848f0c0e56}\label{player_8h_a5119e0d3b75e3579bb20a9848f0c0e56}} 
+\index{player.\+h@{player.\+h}!afficher\+\_\+vie@{afficher\+\_\+vie}}
+\index{afficher\+\_\+vie@{afficher\+\_\+vie}!player.\+h@{player.\+h}}
+\subsubsection{\texorpdfstring{afficher\+\_\+vie()}{afficher\_vie()}}
+{\footnotesize\ttfamily void afficher\+\_\+vie (\begin{DoxyParamCaption}\item[{\hyperlink{structplayer}{player}}]{vie,  }\item[{S\+D\+L\+\_\+\+Surface $\ast$}]{ecran }\end{DoxyParamCaption})}
+
+
+
+affichage de la vie 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vie} & la vie \\
+\hline
+{\em ecran} & la surface ou on va bliter l image \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+nothing 
+\end{DoxyReturn}
+\mbox{\Hypertarget{player_8h_a3cb9c745988aa16c5b06def286d24ff2}\label{player_8h_a3cb9c745988aa16c5b06def286d24ff2}} 
+\index{player.\+h@{player.\+h}!afficher\+Perso@{afficher\+Perso}}
+\index{afficher\+Perso@{afficher\+Perso}!player.\+h@{player.\+h}}
+\subsubsection{\texorpdfstring{afficher\+Perso()}{afficherPerso()}}
+{\footnotesize\ttfamily void afficher\+Perso (\begin{DoxyParamCaption}\item[{\hyperlink{structplayer}{player} $\ast$}]{perso,  }\item[{S\+D\+L\+\_\+\+Surface $\ast$}]{ecran }\end{DoxyParamCaption})}
+
+
+
+affichage du personage 
+
+
+\begin{DoxyParams}{Parameters}
+{\em perso} & l image du player \\
+\hline
+{\em ecran} & la surface ou on va bliter l image \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+nothing 
+\end{DoxyReturn}
+\mbox{\Hypertarget{player_8h_a3832edc3cfb3745638389fd83a929ce3}\label{player_8h_a3832edc3cfb3745638389fd83a929ce3}} 
+\index{player.\+h@{player.\+h}!afficher\+Tous@{afficher\+Tous}}
+\index{afficher\+Tous@{afficher\+Tous}!player.\+h@{player.\+h}}
+\subsubsection{\texorpdfstring{afficher\+Tous()}{afficherTous()}}
+{\footnotesize\ttfamily void afficher\+Tous (\begin{DoxyParamCaption}\item[{\hyperlink{structplayer}{player} $\ast$}]{perso,  }\item[{\hyperlink{structplayer}{player}}]{vie,  }\item[{\hyperlink{structplayer}{player}}]{coin,  }\item[{S\+D\+L\+\_\+\+Surface $\ast$}]{ecran,  }\item[{\hyperlink{structBackground}{Background}}]{b,  }\item[{\hyperlink{structtxt}{txt}}]{txt\+\_\+scoree,  }\item[{\hyperlink{structtxt}{txt}}]{txt\+\_\+viee }\end{DoxyParamCaption})}
+
+
+
+affichage de tous les image 
+
+
+\begin{DoxyParams}{Parameters}
+{\em perso} & the player \\
+\hline
+{\em vie} & l image du vie \\
+\hline
+{\em coin} & l image du score \\
+\hline
+{\em b} & l image du background \\
+\hline
+{\em txt\+\_\+scoree} & limage du le text du score \\
+\hline
+{\em txt\+\_\+vie} & l image du text du vie \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+nothing 
+\end{DoxyReturn}
+\mbox{\Hypertarget{player_8h_a4863f4542229052bbfe03766948e9634}\label{player_8h_a4863f4542229052bbfe03766948e9634}} 
+\index{player.\+h@{player.\+h}!animer\+Perso@{animer\+Perso}}
+\index{animer\+Perso@{animer\+Perso}!player.\+h@{player.\+h}}
+\subsubsection{\texorpdfstring{animer\+Perso()}{animerPerso()}}
+{\footnotesize\ttfamily void animer\+Perso (\begin{DoxyParamCaption}\item[{\hyperlink{structplayer}{player} $\ast$}]{perso,  }\item[{S\+D\+L\+\_\+\+Surface $\ast$}]{ecran }\end{DoxyParamCaption})}
+
+
+
+animation du personage 
+
+
+\begin{DoxyParams}{Parameters}
+{\em perso} & player \\
+\hline
+{\em ecran} & la surface ou on va bliter l image \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+nothing 
+\end{DoxyReturn}
+\mbox{\Hypertarget{player_8h_ab012c400c10006a105839119f4269b13}\label{player_8h_ab012c400c10006a105839119f4269b13}} 
+\index{player.\+h@{player.\+h}!change\+Animation@{change\+Animation}}
+\index{change\+Animation@{change\+Animation}!player.\+h@{player.\+h}}
+\subsubsection{\texorpdfstring{change\+Animation()}{changeAnimation()}}
+{\footnotesize\ttfamily void change\+Animation (\begin{DoxyParamCaption}\item[{\hyperlink{structplayer}{player} $\ast$}]{entity,  }\item[{char $\ast$}]{name }\end{DoxyParamCaption})}
+
+
+
+changement de l image 
+
+
+\begin{DoxyParams}{Parameters}
+{\em entity} & the player \\
+\hline
+{\em name} & le shemas ou ce trouve l image \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+nothing 
+\end{DoxyReturn}
+\mbox{\Hypertarget{player_8h_ac6fd1c5406ec06d81b464179c4cc746f}\label{player_8h_ac6fd1c5406ec06d81b464179c4cc746f}} 
+\index{player.\+h@{player.\+h}!colision@{colision}}
+\index{colision@{colision}!player.\+h@{player.\+h}}
+\subsubsection{\texorpdfstring{colision()}{colision()}}
+{\footnotesize\ttfamily void colision (\begin{DoxyParamCaption}\item[{\hyperlink{structplayer}{player} $\ast$}]{perso }\end{DoxyParamCaption})}
+
+
+
+la collision avec les extrimter de l ecran 
+
+
+\begin{DoxyParams}{Parameters}
+{\em perso} & the player \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+nothing 
+\end{DoxyReturn}
+\mbox{\Hypertarget{player_8h_abb2394626933a38129599c801f0ef54f}\label{player_8h_abb2394626933a38129599c801f0ef54f}} 
+\index{player.\+h@{player.\+h}!deplacer\+Perso@{deplacer\+Perso}}
+\index{deplacer\+Perso@{deplacer\+Perso}!player.\+h@{player.\+h}}
+\subsubsection{\texorpdfstring{deplacer\+Perso()}{deplacerPerso()}}
+{\footnotesize\ttfamily void deplacer\+Perso (\begin{DoxyParamCaption}\item[{\hyperlink{structplayer}{player} $\ast$}]{perso,  }\item[{\hyperlink{structInput}{Input} $\ast$}]{in,  }\item[{\hyperlink{structBackground}{Background} $\ast$}]{b,  }\item[{int $\ast$}]{updated,  }\item[{Uint32}]{dt }\end{DoxyParamCaption})}
+
+
+
+le deplacement du personage 
+
+
+\begin{DoxyParams}{Parameters}
+{\em perso} & the player \\
+\hline
+{\em in} & input donner par le clavier \\
+\hline
+{\em b} & background \\
+\hline
+{\em updated} & varible pour le scrolling \\
+\hline
+{\em dt} & le temp pour l acceleration \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+nothing 
+\end{DoxyReturn}
+\mbox{\Hypertarget{player_8h_a6000c44a7a82ab822604bc928b665292}\label{player_8h_a6000c44a7a82ab822604bc928b665292}} 
+\index{player.\+h@{player.\+h}!get\+Input@{get\+Input}}
+\index{get\+Input@{get\+Input}!player.\+h@{player.\+h}}
+\subsubsection{\texorpdfstring{get\+Input()}{getInput()}}
+{\footnotesize\ttfamily void get\+Input (\begin{DoxyParamCaption}\item[{\hyperlink{structInput}{Input} $\ast$}]{input,  }\item[{int $\ast$}]{pause }\end{DoxyParamCaption})}
+
+
+
+l input donner par le clavier 
+
+
+\begin{DoxyParams}{Parameters}
+{\em input} & l input donner par le clavier \\
+\hline
+{\em pause} & variable pour la pause; \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+nothing 
+\end{DoxyReturn}
+\mbox{\Hypertarget{player_8h_a7d87dbdf9bf31bda8a027c00a5674509}\label{player_8h_a7d87dbdf9bf31bda8a027c00a5674509}} 
+\index{player.\+h@{player.\+h}!init\+\_\+coin@{init\+\_\+coin}}
+\index{init\+\_\+coin@{init\+\_\+coin}!player.\+h@{player.\+h}}
+\subsubsection{\texorpdfstring{init\+\_\+coin()}{init\_coin()}}
+{\footnotesize\ttfamily void init\+\_\+coin (\begin{DoxyParamCaption}\item[{\hyperlink{structplayer}{player} $\ast$}]{coin }\end{DoxyParamCaption})}
+
+
+
+initialisation score 
+
+
+\begin{DoxyParams}{Parameters}
+{\em coin} & le symbole du score \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+nothing 
+\end{DoxyReturn}
+\mbox{\Hypertarget{player_8h_a6b31c46f51fc5187c3fa8839548f11d3}\label{player_8h_a6b31c46f51fc5187c3fa8839548f11d3}} 
+\index{player.\+h@{player.\+h}!init\+\_\+player@{init\+\_\+player}}
+\index{init\+\_\+player@{init\+\_\+player}!player.\+h@{player.\+h}}
+\subsubsection{\texorpdfstring{init\+\_\+player()}{init\_player()}}
+{\footnotesize\ttfamily void init\+\_\+player (\begin{DoxyParamCaption}\item[{\hyperlink{structplayer}{player} $\ast$}]{perso,  }\item[{int}]{posperso }\end{DoxyParamCaption})}
+
+
+
+initialisation du personage 
+
+
+\begin{DoxyParams}{Parameters}
+{\em perso} & the player \\
+\hline
+{\em posperso} & pour la sauvegarde de la position \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+nothing 
+\end{DoxyReturn}
+\mbox{\Hypertarget{player_8h_a5cde04b2abf0f01b430bbaad6eccbb7c}\label{player_8h_a5cde04b2abf0f01b430bbaad6eccbb7c}} 
+\index{player.\+h@{player.\+h}!init\+\_\+vie@{init\+\_\+vie}}
+\index{init\+\_\+vie@{init\+\_\+vie}!player.\+h@{player.\+h}}
+\subsubsection{\texorpdfstring{init\+\_\+vie()}{init\_vie()}}
+{\footnotesize\ttfamily void init\+\_\+vie (\begin{DoxyParamCaption}\item[{\hyperlink{structplayer}{player} $\ast$}]{vie }\end{DoxyParamCaption})}
+
+
+
+initialisation de la vie 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vie} & la vie du personage \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+nothing 
+\end{DoxyReturn}
